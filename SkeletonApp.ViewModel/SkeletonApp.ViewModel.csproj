@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ReactiveUI.Fody" Version="16.2.6" />
+    <PackageReference Include="ReactiveUI.Fody" Version="19.4.1" />
   </ItemGroup>
 
 </Project>
