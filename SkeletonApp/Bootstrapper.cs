@@ -3,28 +3,27 @@ using SkeletonApp.ViewModel;
 using System;
 using System.Windows;
 
-namespace SkeletonApp
+namespace SkeletonApp;
+
+internal class Bootstrapper : IDisposable
 {
-    internal class Bootstrapper : IDisposable
+    public Bootstrapper(Application current)
     {
-        public Bootstrapper(Application current)
+        Register();
+
+        current.MainWindow = new MainWindow
         {
-            Register();
+            DataContext = new MainWindowViewModel()
+        };
 
-            current.MainWindow = new MainWindow
-            {
-                DataContext = new MainWindowViewModel()
-            };
+        current.MainWindow.Show();
+    }
 
-            current.MainWindow.Show();
-        }
+    public void Dispose()
+    {
+    }
 
-        public void Dispose()
-        {
-        }
-
-        private void Register()
-        {
-        }
+    private void Register()
+    {
     }
 }

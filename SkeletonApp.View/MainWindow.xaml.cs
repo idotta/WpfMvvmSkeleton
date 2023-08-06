@@ -1,15 +1,11 @@
 ﻿using MahApps.Metro.Controls;
 
-namespace SkeletonApp.View
+namespace SkeletonApp.View;
+
+public partial class MainWindow : MetroWindow
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : MetroWindow
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }
