@@ -1,9 +1,8 @@
 ﻿using ReactiveUI;
 
-namespace SkeletonApp.ViewModel
+namespace SkeletonApp.ViewModel;
+
+public class MainWindowViewModel : ViewModelBase, IScreen
 {
-    public class MainWindowViewModel : ViewModelBase, IScreen
-    {
-        public RoutingState Router { get; } = new();
-    }
+    public RoutingState Router { get; } = new();
 }
